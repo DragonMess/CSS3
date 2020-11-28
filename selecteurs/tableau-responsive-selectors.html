@@ -4,33 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise de selecteur</title>
+    <style>
+      html {
+        font: normal 100%/1.5 Helvetica, Arial, sans-serif;
+      }
+      @media screen and (max-width: 700px) {
+        table,
+        tr,
+        th,
+        td,
+        tbody {
+          display: block;
+        }
+        thead {
+          display: none;
+        }
+        table tbody tr {
+          border: 2px solid rgba(0, 0, 0, 0.2);
+          margin: 1rem;
+          padding: 1rem;
+          border-radius: 0.2rem;
+        }
+        table tbody tr td:nth-child(1),
+        table tbody tr td:nth-child(2) {
+          display: inline-block;
+          font-weight: bold;
+        }
+        html[lang="fr"]      table tbody tr td a[href^="mailto"]:before{
+          content:"Courriel:";
+        }
+        html[lang="en"]      table tbody tr td a[href^="mailto"]:before{
+          content:"Email:";
+        }
+        table tbody tr td a[href^="mailto"]:before{
+          font-weight: bold;
+        }
+
+        html[lang="fr"]      table tbody tr td a[href^="tel"]:before{
+          content:"Tel:";
+        }
+        html[lang="en"]      table tbody tr td a[href^="tel"]:before{
+          content:"Tel:";
+        }
+        table tbody tr td a[href^="tel"]:before{
+          font-weight: bold;
+        }
+      }
+    </style>
   </head>
   <body>
     <table>
-      <thhead>
+      <thead>
         <tr>
           <th>Prenom</th>
           <th>Nom</th>
           <th>Courriel</th>
           <th>Telephone</th>
         </tr>
-      </thhead>
+      </thead>
       <tbody>
         <tr>
           <td>Juan</td>
           <td>Stephan</td>
           <td>
-            <a href="mailto:juanStephan@espacecourbeformation.com"></a
-            >juanStephan@espacecourbeformation.com
+            <a href="mailto:juanStephan@espacecourbeformation.com">
+            juanStephan@espacecourbeformation.com</a
           </td>
           <td><a href="tel:514 933-9861">514 933-9861</a></td>
         </tr>
         <tr>
-          <td>Juan</td>
-          <td>Stephan</td>
+          <td>Alguien</td>
+          <td>Personne</td>
           <td>
-            <a href="mailto:alguien@espacecourbeformation.com"></a
-            >alguien@espacecourbeformation.com
+            <a href="mailto:alguien@espacecourbeformation.com">
+            alguien@espacecourbeformation.com
+            </a
           </td>
           <td><a href="tel:514 933-9999">514 933-9999</a></td>
         </tr>

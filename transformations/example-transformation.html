@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Experimentation CSS 3 - transformation</title>
+    <style>
+      html {
+        /* font: weight lineheight family */
+        font: 400 100%/1.5 "Mountains of Christmas", cursive;
+        color: #fff;
+        background-color: #d91c0b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        /* 16px margin-top + margin-bottom */
+        height: calc(100vh - 16px);
+        /* margin: 0; */
+      }
+      .btn {
+        height: 50vh;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .btn a {
+        font-size: 3rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        border: 1rem solid;
+        /* display block definir height and width */
+        display: inline-block;
+        padding: 5%;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-color: #d91c0b;
+        transform: scale(1) translate(-50%, -50%);
+        transform-origin: center;
+        transition: all 0.3s ease;
+      }
+      .btn a:hover,
+      .btn a:focus {
+        transform: scale(1.5) translate(-50%, -50%);
+      }
+      .btn span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn">
+      <a href="#"><span>Noel</span></a>
+    </div>
+  </body>
+</html>

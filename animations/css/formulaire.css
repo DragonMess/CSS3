@@ -1,0 +1,36 @@
+@charset "iso-8859-1";
+/* CSS Document */
+html {
+	background:#666666
+}
+body {
+	margin:50px auto;
+	width:938px;
+	padding:10px 10px 30px;
+	background:#CCCCCC;
+	font: 80%/150% "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border:1px solid #fff;
+	box-shadow:0 0 10px rgba(0,0,0,0.5)
+}
+
+form  {
+	width:700px;
+	margin:0 auto;
+	
+}
+
+label  {
+	float:left;
+	width:5em;
+	text-align:left;
+	padding-right:10px;
+	font-weight:bold
+	
+}
+
+input  {
+	border:1px solid #2A2A2A;
+	width:250px;
+	background: #E8E8E8
+	
+}

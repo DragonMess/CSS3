@@ -1,0 +1,115 @@
+
+ body{width:960px;
+ margin:100px auto;
+ 
+ font:12px/17px Geneva, Arial, Helvetica, sans-serif}
+ 
+ ul#nav {
+    background: none repeat scroll 0 0 transparent;
+    margin: 30px 20px 30px 0;
+    position: relative;
+	padding:0;
+    width: 215px;
+	
+	border-radius: 0 15px 15px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	font:1em/1em Geneva, Arial, Helvetica, sans-serif;
+	float:left;
+	
+}
+
+ ul#nav li {
+    list-style: none outside none;
+    position: relative;
+    width: 215px;
+	
+	background: -moz-linear-gradient(top,  rgba(246,230,180,1) 0%, 
+	rgba(237,144,23,1) 100%);
+	margin-bottom:1px
+}
+
+ ul#nav li a {	
+    -moz-transition: background 0.5s ease 0s;
+    background-color: #666666;
+	
+    border-color: rgba(255, 255, 255, 0.5) 
+	              rgba(0, 0, 0, 0.5)
+				  rgba(255, 255, 255, 0.5)
+				  rgba(0, 0, 0, 0.5);
+				  
+    border-style: solid;
+    border-width: 0 0 0 15px;	
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    height: 50px;
+	width: 170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-decoration: none;
+
+    
+
+}
+ul#nav li a:hover {
+    -moz-transition: background padding 0s ease 0s;
+    background: none repeat scroll 0 0 transparent;
+    color: #000;
+    text-shadow: 0 1px 0 rgba(237,144,23,0.5);
+}
+
+ul#nav li a strong {
+    display: block;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+ 
+ul#nav li:first-child, ul#nav li:first-child a {
+    border-radius: 0 15px 0 0;
+}
+
+ul#nav li:last-child,  ul#nav li:last-child a {
+    border-radius: 0 0 15px 0;
+	margin-bottom:0;
+}
+
+
+/*pour faire le rond des fleches ;) */
+
+ul#nav li a:hover:after {
+  	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background:rgba(237,144,23,0.5);
+    border-radius: 10px;
+    color: #fff;
+    content: "";
+    font-size: 0.6em;
+    font-weight: normal;
+    height: 20px;
+	width: 20px;
+    position: absolute;
+    right: 8px;
+    text-indent: 3px;
+    top: 25px;
+
+}
+
+/*pour faire les fleches ;) */
+
+ ul#nav li a:hover:before {
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #fff;
+    border-top: 6px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 14px;
+    top: 29px;
+    width: 0;
+    z-index: 10;
+}
+
+
+.texte{
+	padding-top:100px
+}

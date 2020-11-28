@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	box-shadow:0 0 10px rgba(0,0,0,0.5)
+}
+
+h1, h2 {
+	font-family: 'Fredericka the Great', cursive;
+}
+h1+p {
+	font-family: 'Fredericka the Great', cursive;
+	
+}
+
+.en {
+	-moz-transform: rotate(-20deg);
+}
+
+#capsule {
+	font-family: 'Fredericka the Great', cursive;
+	border-radius:400px;
+	-webkit-transform:rotate(-25deg);
+	-moz-transform:rotate(-25deg);
+	box-shadow:0 0 12px rgba(35,35,35,0.5);
+	background-color:#dde329; background-image: -moz-repeating-radial-gradient(12% 35%, ellipse cover, #dde329, #56bd11 100%); background-image: -webkit-repeating-radial-gradient(12% 35%, ellipse cover, #dde329, #56bd11 100%); background-image: -o-repeating-radial-gradient(12% 35%, ellipse cover, #dde329, #56bd11 100%); background-image: -ms-repeating-radial-gradient(12% 35%, ellipse cover, #dde329, #56bd11 100%); background-image: repeating-radial-gradient(12% 35%, ellipse cover, #dde329, #56bd11 100%);
+}

@@ -1,0 +1,109 @@
+/* CSS Document */
+
+html {
+	background:#666666
+}
+body {
+	margin:50px auto;
+	width:938px;
+	padding:10px 10px 30px;
+	background:#CCCCCC;
+	font: 80%/150% "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border:1px solid #fff;
+	box-shadow:0 0 10px rgba(0,0,0,0.5)	
+}
+
+h2{ margin-bottom:0;}
+
+h2 + p{ margin:0 0 20px;
+	border-bottom:1px solid #555;
+	padding-bottom:20px;
+
+
+}
+.menu-media li{
+	float:left;
+	margin-right:20px;
+	}
+.menu-media{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+	
+.menu-media li img{
+	opacity:0.5;
+	-webkit-transition: all .5s ease-in;
+	-moz-transition: all .5s ease-in;
+	-o-transition: all .5s ease-in;
+	-ms-transition: all .5s ease-in;
+	box-shadow:0 0 5px rgba(0,0,0,0.5);
+	border-radius:38px;
+	}
+		
+.menu-media li a img:hover{
+	opacity:1;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	-o-transform: rotate(40deg);
+	-ms-transform: rotate(40deg);
+	transform: rotate(40deg);
+
+	}	
+		
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+
+    }
+		
+/* rotation 3D*/	
+#f1_container {
+	position: relative;
+	margin: 10px auto;
+	width: 470px;
+	height: 351px;
+	z-index: 1;
+}
+#f1_container {
+	perspective: 1000;
+}
+#f1_card {
+	width: 100%;
+	height: 100%;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: all 1.0s linear;
+	transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+	position: absolute;
+	width: 100%;
+	height: 351px;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.face.back {
+	display: block;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	box-sizing: border-box;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	background-color: #aaa;
+}	
+
+	
+

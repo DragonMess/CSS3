@@ -1,0 +1,71 @@
+/* CSS Document */
+
+div.photo div:first-child {
+	-webkit-transform:  skew(10deg, -18deg) translate(-2px, 52px);
+	-moz-transform:  skew(10deg, -18deg) translate(-2px, 52px);
+	transform:  skew(10deg, -18deg) translate(-2px, 52px);
+	background:url(../images/vancouver.jpg) no-repeat left top
+}
+div.photo div:nth-child(2) {
+	-webkit-transform:  skew(10deg, 10deg) translate(1.2px, 38px);
+	-moz-transform:  skew(10deg, 10deg) translate(1.2px, 38px);
+	transform:  skew(10deg, 10deg) translate(1.2px, 38px);
+	background:url(../images/vancouver.jpg) no-repeat -180px top
+}
+div.photo div:nth-child(3) {
+	-webkit-transform:  skew(10deg, -20deg) translate(3px, 22px);
+	-moz-transform: skew(10deg, -20deg) translate(3px, 22px);
+	transform: skew(10deg, -20deg) translate(3px, 22px);
+	background:url(../images/vancouver.jpg) no-repeat -360px top
+}
+div.photo div:last-child {
+	-webkit-transform:  skew(10deg, 10deg) translate(7px, 2px);
+	-moz-transform:  skew(10deg, 10deg) translate(7px, 2px);
+	transform:  skew(10deg, 10deg) translate(7px, 2px);
+	background:url(../images/vancouver.jpg) no-repeat right top
+}
+div.photo div {
+	box-shadow:-10px 0 30px rgba(18,18,18,0.5);
+	width:180px;
+	height:480px;
+	float:left;
+	
+}
+
+div.photo div {
+	-webkit-transition: all 0.1s ease-in;
+}
+div.photo:hover div {
+	-webkit-transform:  skew(0deg, 0deg) translate(0px, 0px);
+	-moz-transform:  skew(0deg, 0deg) translate(0px, 0px);
+	transform:  skew(0deg, 0deg) translate(0px, 0px);
+	transition: all 0.1s ease-in;
+}
+html {
+	background:#666666
+}
+body {
+	margin:50px auto;
+	width:938px;
+	padding:10px 10px 30px;
+	background:#162B4A;
+	font: 80%/150% Arial, Helvetica, sans-serif;
+	position:relative;
+	color:#FFF;
+}
+h1 {
+	text-align:center;
+	margin-top:3em;
+	line-height:210%
+}
+p {
+	padding:10px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

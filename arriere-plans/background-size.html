@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3 - Background-size</title>
+<link rel="stylesheet" type="text/css" href="css/background-size.css">
+</head>
+
+<body>
+<h1>CSS3 - Background-size</h1>
+
+<div class="wrapper  cover">
+<div class="texte">
+<h2>Exemple de background-size:cover</h2>
+<p class="code ">	background: #3b5b82 url(../images/totem.jpg) no-repeat right top fixed;<br>
+	background-size: cover;<br>
+	overflow:auto;</p>
+<p>cover : forcera à couvrir toute la surface sans déformer l'image. Quitte à la rogner.</p>
+</div>
+</div>
+
+<div class="wrapper  contain">
+<div class="texte">
+<h2>Exemple de background-size:contain</h2>
+ <p>background: #3b5b82 url(../images/totem.jpg) no-repeat right top ;<br>
+
+	background-size: contain;</p> 
+    
+<p>contain: forcera l'image à ne pas dépasser de l'élément sans la déformer.</p>
+ 
+</div>
+</div>
+
+<div class="wrapper  auto">
+<div class="texte">
+<h2>Exemple de background-size:auto</h2>
+ <p>background: #3b5b82 url(../images/totem.jpg) no-repeat right top;<br>
+	background-size: auto;</p> 
+</div>
+</div>
+
+<div class="wrapper  x-y">
+<div class="texte">
+<h2>Exemple de background-size: 400px auto;</h2>
+ <p>background: #3b5b82 url(../images/totem.jpg) no-repeat right top;<br>
+
+	background-size: 400px auto;</p> 
+</div>
+</div>
+</body>
+</html>

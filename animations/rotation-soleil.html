@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animation d'une rotation</title>
+
+<style>
+body {
+	background-color: black;
+}
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }  
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotation {
+  0% {
+    -moz-transform: rotate(0deg);
+  }  
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+#soleil  {
+  -webkit-animation-name: rotation;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  
+  -moz-animation-name: rotation;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+}
+#contenu{width:264px;
+margin:50px auto;}
+</style>
+</head>
+
+<body>
+
+<div id="contenu"><img src="images/soleil.png" name="soleil" width="264" height="262" id="soleil"></div>
+
+</body>
+</html>

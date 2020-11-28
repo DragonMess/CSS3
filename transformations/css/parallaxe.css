@@ -1,0 +1,41 @@
+/* CSS Document */
+body{
+	width:100%;
+	margin: 0 auto;
+	background:	
+		url(../images/Parallax/bulle-petite.png) repeat fixed  50% -500%,
+		url(../images/Parallax/bulle-grande.png) repeat fixed  30% 10%,
+		url(../images/Parallax/fond-couleur.jpg) no-repeat fixed 0 0;
+	color:#fff;
+	position:relative;
+	background-size:cover;
+}
+
+
+.texte{
+	background:rgba(0,0,0,0.3);
+	padding:20px;
+	border-radius:20px;
+	position:relative;
+	width:50%;
+	margin: 50px auto;
+	z-index:50;
+	
+	}
+	
+.bulle-petite{
+	background:	url(../images/Parallax/bulle-petite.png)  repeat scroll  0% 200%;
+	position:absolute;
+	height:2000px;
+	width:100%;
+	top:-50px;
+	z-index:20;
+	}	
+.bulle-grosse{
+	background:	url(../images/Parallax/bulle-grande.png) repeat scroll  left -200%;
+	position:absolute;
+	height:2000px;
+	width:100%;
+	z-index:10;
+	top:-300px;
+	}	

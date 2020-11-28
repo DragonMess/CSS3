@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap");
+
+:root {
+  --main-color: 37, 137, 169; /*#2589a9;*/
+  --main-color-alpha5: 0.5 /*#2589a950*/;
+  --main-color-alpha1: 0.1 /*#2589a910*/;
+  --btn-hover: #18566b;
+  --border-radius: 0.4rem;
+}
+
+html {
+  font: 400 100%/1.5 "Montserrat Alternates", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: rgba(var(--main-color));
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#entete {
+  padding: 5% 5% 0;
+}
+main {
+  padding: 5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+section {
+  color: #666;
+  margin: 2rem 0;
+  background: #fff;
+  padding: 5%;
+  border-radius: var(--border-radius);
+}
+
+section h2 {
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+section h2:after {
+  content: "";
+  height: 1rem;
+  width: 5rem;
+  background-color: var(--main-color);
+}
+
+section p {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  border-radius: var(--border-radius);
+  background: rgba(var(--main-color), 1);
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: table;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--btn-hover);
+}
+
+#intro {
+  background: url(../images/accueil/le-chef.png) no-repeat right bottom,
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.75) 24%,
+      rgba(255, 255, 255, 0.65) 34%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #fff url("../images/interface/logo-cef-bleu.svg") no-repeat right center;
+
+  background-size: contain, cover, cover;
+  padding-right: 33.333333%;
+}
+
+#experience-culinaire {
+  background: url(../images/accueil/ustensile.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+#experience-culinaire .btn {
+  margin: 1rem auto 0;
+}
+
+#experience-culinaire img {
+  border-radius: 100%;
+  width: 75%;
+  height: 75%;
+  padding: 0.5rem;
+  border: 1rem solid rgba(var(--main-color), var(--main-color-alpha5));
+}
+
+@media screen and (min-width: 768px) {
+  #experience-culinaire img {
+    max-width: 400px;
+    height: auto;
+  }
+
+  #experience-culinaire {
+    text-align: left;
+    background: rgba(var(--main-color), var(--main-color-alpha1))
+      url(../images/accueil/ustensile.jpg) no-repeat center center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+  }
+  #experience-culinaire .btn {
+    margin: 1rem 0 0;
+  }
+}

@@ -1,0 +1,109 @@
+/* CSS Document */
+
+html {
+	background: #37474f
+}
+body {
+	margin: 50px auto;
+	width: 938px;
+	padding: 3em;
+	background: #eceff1;
+	font: 80%/150%  Arial, Helvetica, sans-serif;
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	min-height: 600px
+}
+* {
+	box-sizing: border-box;
+}
+h1{color:#607d8b}
+h2 {
+	margin: 0;
+	height: 50px;
+	background: #263238;
+	position: relative;
+	line-height: 50px;
+	padding: 0 1em;
+	color: #90a4ae;
+	font-weight:bold;
+}
+h2 span{
+	font-weight:100;
+	text-transform:uppercase;
+}
+h2 span:after{
+	display:inline-block;
+	content:"|";
+	margin-left:.5em;
+	margin-right:.5em
+}
+h2:after {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: #90a4ae url(../images/ico-plus.svg) no-repeat center center;
+	background-size: cover;
+	content: "";
+	position: absolute;
+	top: .3em;
+	right: 1em;
+	border: 3px solid #37474f;
+	border-radius: 20px;
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition: all .3s ease-in-out;
+}
+p {
+	margin: 0 0 20px;
+	padding-bottom: 20px;
+}
+.accordeon {
+	max-height: 50px;
+	overflow: hidden;
+	width: 500px;
+	border: 1px solid #263238;
+	transition: max-height .5s ease-in-out;
+	background: #b0bec5;
+	cursor:pointer;
+	border-radius:5px
+}
+.accordeon img {
+	width:150px;
+	height:auto;
+	float:right;
+	margin:0 0 1em 1em
+}
+.accordeon .contenu-texte {
+	padding: 1em
+}
+.accordeon:hover {
+	max-height: 500px;
+}
+.accordeon:hover h2:after, .accordeon:focus h2:after {
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-filter: saturate(4);
+	filter: saturate(4);
+}
+.btn {
+	background: #263238;
+	position: relative;
+	padding: 1em;
+	font-size: 1.125em;
+	font-weight: bold;
+	color: #90a4ae;
+	height: 50px;
+	border-radius: 4px;
+	border: 3px solid #37474f;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition:all .3s ease-in-out;
+}
+.btn:hover {
+	-webkit-filter: saturate(4);
+	filter: saturate(4);
+}

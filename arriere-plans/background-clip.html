@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3 - Background-size</title>
+<link rel="stylesheet" type="text/css" href="css/background-clip.css">
+</head>
+
+<body>
+<h1>CSS3 - Background-clip</h1>
+
+<div class="wrapper  border-box">
+<div class="texte">
+<h2>Exemple de background-clip:border-box</h2>
+<p class="code ">	background: #3b5d83 url(../images/totem.jpg) no-repeat left top;<br>
+	background-clip: border-box;<br>
+	overflow:auto;</p>
+<p>border-box : L'arrière plan s'étend jusqu'a l'extrême limite de la bordure
+</p>
+</div>
+</div>
+
+<div class="wrapper  padding-box">
+<div class="texte">
+<h2>Exemple de background-clip: padding-box;</h2>
+ <p>background: #3b5b82 url(../images/totem.jpg) no-repeat left top ;<br>
+
+	background-clip: padding-box;</p> 
+    
+<p>padding-box : Aucun arrière-plan sera présent en-dessous de la bordure : l'extrême limite sera celle du padding
+</p>
+ 
+</div>
+</div>
+
+<div class="wrapper  content-box">
+<div class="texte">
+<h2>Exemple de background-clip:content-box</h2>
+ <p>background: #3b5b82 url(../images/totem.jpg) no-repeat left top;<br>
+	background-clip: content-box;</p> 
+<p>content-box : L'arrière plan se limite au contenu</p>
+
+</div>
+</div>
+
+
+</body>
+</html>

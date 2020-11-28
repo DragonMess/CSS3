@@ -1,0 +1,107 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+#soleil {
+	-webkit-animation-name: rotation;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: rotation;
+	-moz-animation-duration: 10s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotation {
+ 0% 	{-webkit-transform: rotate(0deg);}
+ 100% 	{-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotation {
+ 0% 	{-moz-transform: rotate(0deg);}
+ 100% 	{-moz-transform: rotate(360deg);}
+}
+
+#paysage {
+	background-color:#ffffff;
+	background-image: -moz-linear-gradient(90deg, #ffffff, #ffffff, #00b0d8 65.0%);
+	background-image: -webkit-linear-gradient(90deg, #ffffff, #ffffff, #00b0d8 65.0%);
+	background-image: -o-linear-gradient(90deg, #ffffff, #ffffff, #00b0d8 65.0%);
+	background-image: -ms-linear-gradient(90deg, #ffffff, #ffffff, #00b0d8 65.0%);
+	background-image: linear-gradient(90deg, #ffffff, #ffffff, #00b0d8 65.0%);
+}
+
+#nuages {
+	background:
+		url(../images/nuage-long.png) repeat-x 0 20%,
+		url(../images/nuage-long.png) repeat-x -10% 10%,
+		url(../images/nuage-gros.png) no-repeat  10% 25px;
+}
+
+#champs {
+	background-color:#690;
+	background-image: -moz-linear-gradient(90deg, #690, #97b516 75.0%);
+	background-image: -webkit-linear-gradient(90deg, #690, #97b516 75.0%);
+	background-image: -o-linear-gradient(90deg, #690, #97b516 75.0%);
+	background-image: -ms-linear-gradient(90deg, #690, #97b516 75.0%);
+	background-image: linear-gradient(90deg, #690, #97b516 75.0%);
+	border-bottom:3px solid #97b516;
+	box-shadow:0 0 12px #000;
+}
+
+#herbes {
+	background:
+		url(../images/mouton.png) repeat-x 10% 25%,  
+		url(../images/herbes.png) repeat-x 40% 100%,  
+		url(../images/herbes.png) repeat-x 60% 100%,  
+		url(../images/herbes.png) repeat-x -90% 100%;
+}
+
+h1 {
+	font-family: 'Skranji';
+}
+
+
+#wrapper-bouton {
+	-webkit-transition: height 0.5s ease;
+	-moz-transition:height 0.5s ease;
+	-o-transition: height 0.5s ease;
+	transition: height 0.5s ease;
+}
+
+
+.bouton {
+	font-family: 'Skranji';
+}
+
+
+#multicolonne {
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	column-count:2;
+	-webkit-column-gap: 20px;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+}
+
+.capsule {
+	font-family: 'Skranji';
+
+	border-radius:200px;
+	background-color:#690;
+	background-image: -moz-linear-gradient(45deg, #97b516, #690 75.0%);
+	background-image: -webkit-linear-gradient(45deg, #97b516, #690 75.0%);
+	background-image: -o-linear-gradient(45deg, #97b516, #690 75.0%);
+	background-image: -ms-linear-gradient(45deg, #97b516, #690 75.0%);
+	background-image: linear-gradient(45deg, #97b516, #690 75.0%);
+
+	box-shadow:0 0 12px rgba(0,0,0, 0.5);
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+}
+
+footer {
+	box-shadow:0 -15px 12px rgba(0,0,0, 0.2);
+}
+

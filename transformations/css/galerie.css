@@ -1,0 +1,95 @@
+/* CSS Document */
+html {
+	background:#666666
+}
+body {
+	margin:50px auto;
+	width:938px;
+	padding:10px 10px 30px;
+	background:#CCCCCC;
+	font: 80%/150% "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border:1px solid #fff;
+	box-shadow:0 0 10px rgba(0,0,0,0.5)
+	
+}
+
+ul.galerie li {
+	float: left;
+	margin: 0 10px;
+	padding: 10px;
+	list-style: none;
+	background: #fff;
+}
+ul.galerie li a img {
+	float: left;
+	width: 200px;
+}
+ul.galerie.echelle li:hover {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+}
+ul.galerie.rotation li:hover {
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+ul.galerie.translation li:hover {
+	-webkit-transform: translate(0px, -40px);
+	-moz-transform: translate(0px, -40px);
+	-o-transform: translate(0px, -40px);
+	-ms-transform: translate(0px, -40px);
+	transform: translate(0px, -40px);
+}
+ul.galerie.obliquite li:hover {
+	-webkit-transform: skew(-5deg, 30deg);
+	-moz-transform: skew(-5deg, 30deg);
+	-o-transform: skew(-5deg, 30deg);
+	-ms-transform: skew(-5deg, 30deg);
+	transform: skew(-5deg, 30deg);
+}
+ul.galerie.composition li {
+	-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+ul.galerie.composition li:hover {
+	-webkit-transform: scale(1.5) rotate(-10deg);
+	-moz-transform: scale(1.5) rotate(-10deg);
+	-o-transform: scale(1.5) rotate(-10deg);
+	-ms-transform: scale(1.5) rotate(-10deg);
+	transform: scale(1.5) rotate(-10deg);
+}
+
+ul.galerie li img {
+	border:1px solid #DEDEDE
+}
+
+h1,h2 {
+	margin-left:50px;
+}
+
+
+h2 {
+	clear: both;
+	padding-top: 3em;
+}
+h1 + h2 {
+	padding-top: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }

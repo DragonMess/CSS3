@@ -1,0 +1,64 @@
+/* CSS Document */
+
+html {
+	background: #333;
+	height:100%;
+	min-height:100%;
+	
+}
+body {
+	width: 50%;
+	margin: 5em auto;
+	font: 100%/1.125em Arial, Helvetica;
+	color: #333;
+	min-height: 500px;
+	padding: 0;
+}
+.wrapper  {
+	padding: 2em;
+	margin-top: 2em;
+	overflow:auto;
+}
+
+h1 {
+	color: #fff;
+	margin: 0;
+	font-weight: 100;
+	font-size:2em
+}
+
+h2 {
+	margin: 0;
+	font-weight: 100;
+	font-size:1.325em
+}
+.texte {
+	color:#fff;
+		
+
+	padding: 5em 2em;
+	width: 45%;
+	float:right;}
+.code{font-size:.9em}
+
+.wrapper.cover  {
+	background: #3b5b82 url(../images/totem.jpg) no-repeat right top fixed;
+	background-size: cover;
+	overflow:auto;
+}
+
+
+.wrapper.contain  {
+	background: #3b5b82 url(../images/totem.jpg) no-repeat left top ;
+	background-size: contain;
+}
+
+.wrapper.auto  {
+	background: #3b5b82 url(../images/totem.jpg) no-repeat left top;
+	background-size: auto;
+}
+
+.wrapper.x-y  {
+	background: #3b5b82 url(../images/totem.jpg) no-repeat left top;
+	background-size: 400px auto;
+}

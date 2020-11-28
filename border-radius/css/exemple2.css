@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	background:#696a6c;
+ }
+
+body {
+	font:12px/17px Geneva, Arial, Helvetica, sans-serifx;
+	background:#696a6c url(../images/6.jpg) repeat-x;
+	width:800px;
+	height:800px;
+	margin:0 auto;
+	min-height:700px;
+	border:2px solid #999999;
+	
+	border-radius: 1600px;
+	position:relative;
+
+ }
+ 
+ h1,h2 { 
+ 	color:#4f3012
+ }
+ 
+ h1 { 
+	 font:180%/120% Geneva, Arial, Helvetica, sans-serifx;
+	 text-transform:uppercase;
+	 font-weight:bold;
+ }
+
+
+ h1+h2 { 
+ 	margin:-.75em 0 0 0;
+ }
+ 
+
+#boite {
+	/* pour faire une bulle :) */
+	width:600px;
+	height:600px;
+	border-radius: 1200px;
+	
+	background:#fff;	
+	overflow:hidden;
+	margin:100px auto;
+	vertical-align:middle;
+	box-shadow:0 0 10px rgba(0, 0, 0, .5)
+	
+}
+
+
+#boite img{
+	width:100%;
+}
+
+
+.texte {
+	padding:10px 100px;
+	
+}
+
+
+#nav{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.bouton1,.bouton2,.bouton3{
+	position: absolute;
+}
+
+.bouton1{
+	top:50px;
+	right:80px}
+
+.bouton2{
+	top:150px;
+	right:0px}
+
+.bouton3{
+	top:550px;
+	right:0px}
+
+#nav a{
+	background:#4f3012;
+	width:100px;
+	height:100px;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:24px;
+	line-height:100px;
+	color:#FFFFFF;
+	border-radius: 200px;
+	box-shadow:0 0 10px rgba(0, 0, 0, .5);border:2px solid #999999;
+}
+
+#nav a:hover{
+	background:#815A43;
+}

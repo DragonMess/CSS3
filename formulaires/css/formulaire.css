@@ -1,0 +1,133 @@
+/* CSS Document */
+
+html {
+	background:#666666
+}
+body {
+	margin:50px auto;
+	width:938px;
+	padding:10px 10px 30px;
+	background:#CCCCCC;
+	font: 80%/150% Arial, Helvetica, sans-serif;
+	border:1px solid #fff;
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+s
+}
+h1, h2 {
+	text-transform:uppercase;
+	color:#666; /* pour navigateur qui ne supportent pas encore le RGBA*/
+	color:rgba(0,0,0,0.6);
+	margin-top:0
+}
+#content {
+	float:left;
+	width:600px;
+	margin:38px;
+}
+#right {
+	float:left;
+	width:200px;
+	margin-top:38px;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* formulaire */	
+#thing-alerts div {
+	margin:0 0 15px 0;
+}
+#thing-alerts label {
+	display:block;
+	font-weight:bold;
+	line-height:1.4;
+	color:#666; /* pour navigateur qui ne supportent pas encore le RGBA*/
+	color:rgba(0,0,0,0.6);
+	text-shadow: 0 1px 1px #fff;
+}
+#thing-alerts div:last-child {
+	margin:0;
+}
+#thing-alerts input[type="text"], #thing-alerts input[type="email"] {
+	width:215px;
+	padding:5px 8px;
+	font-size:1.2em;
+	color:#666;
+	border:none;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 15%, form(#999), to(#fff));
+	background-image:-moz-linear-gradient(0% 15% 90deg, #fff, #999);
+	background-color:#fff;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+}
+
+#thing-alerts input[type="text"]:focus, 
+#thing-alerts input[type="submit"]:hover,
+#thing-alerts input[type="email"]:focus {
+	-webkit-box-shadow: 0 0 12px rgba(51,204,255,0.5);
+	-moz-box-shadow: 0 0 12px rgba(51,204,255,0.5);
+    -o-box-shadow: 0 0 12px rgba(51,204,255,0.5);
+	box-shadow: 0 0 12px rgba(51,204,255,0.5);
+	border:none
+}
+	
+#thing-alerts input[type="text"]:focus d,
+#thing-alerts input[type="submit"]:focus d,
+#thing-alerts input[type="submit"]:hover d {
+	-webkit-animation:pulse 1.5s infinite ease-in-out;
+}	
+	
+#thing-alerts input[type="submit"] {
+	padding:8px 15px;
+	color:#444;
+	font-weight:bold;
+	line-height:1;
+	border:none;
+	text-shadow:0 1px 1px rgba(255, 255, 255, 0.85);
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, form(#fff), to(#bbb));
+	background-image:-moz-linear-gradient(0% 100% 90deg, #fff, #bbb);
+	background-color:#fff;
+	-moz-border-radius:23px;
+	-webkit-border-radius:23px;
+	-o-border-radius:23px;
+	border-radius:23px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    -o-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+
+/*Note: effet de pulse ne fonctionne pas avec firefox */
+@-webkit-keyframes pulse{
+	0% {-webkit-box-shadow: 0 0 10px rgba(51,204,255, 0.2)}
+	50% {-webkit-box-shadow: 0 0 15px rgba(51,204,255, 0.9)}
+	100% {-webkit-box-shadow: 0 0 10px rgba(51,204,255, 0.2)}
+	}
+	
+	@-webkit-keyframes pulse-error{
+	0% {-webkit-box-shadow: 0 0 10px rgba(204,0, 0, 0.2)}
+	50% {-webkit-box-shadow: 0 0 15px rgba(204,0, 0, 0.9)}
+	100% {-webkit-box-shadow: 0 0 10px rgba(204,0, 0, 0.2)}
+	}
+
+input:invalid {
+	-webkit-animation:pulse-error 1.5s infinite ease-in-out;
+}
+
+
+
+
+
+
+
+

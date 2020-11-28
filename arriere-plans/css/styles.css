@@ -1,0 +1,14 @@
+/* CSS Document */
+div#content {
+  margin: auto;
+  margin-top: 200px;
+  width: 500px;
+}
+
+body {
+  background: 
+    url('../images/vines-front.png') repeat-x 150% 0,
+	url('../images/vines-mid.png') repeat-x 40% 0, 
+	url('../images/body.gif') repeat-x 20% 0;
+	background-color: #644023; 
+}

@@ -1,0 +1,42 @@
+:root {
+  --bakground: black;
+  --bg-chef: red;
+  --txt: white;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: var(--bg-chef);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+.chefName {
+  z-index: -1;
+  margin-left: -100px;
+  background-color: var(--bakground);
+  color: red;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}

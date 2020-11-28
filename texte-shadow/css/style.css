@@ -1,0 +1,21 @@
+/* CSS Document */
+
+html {
+	background:#666666
+}
+body {
+	margin:50px auto;
+	width:938px;
+	padding:10px 10px 30px;
+	background: #333;
+	font: 80%/150% "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border:1px solid #fff;
+	box-shadow:0 0 10px rgba(0,0,0,0.5)
+	
+}
+
+h1{ font-family: 'Skranji';
+	font-weight:normal;
+	font-size:50px;
+	text-align:center;
+	text-shadow: 0 0 2px #fff, 0 0 10px #ddd, 0 0 20px #ccc; }

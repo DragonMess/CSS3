@@ -1,0 +1,38 @@
+/* CSS Document */
+div[class$="momo"] {
+	background-color: yellow;
+}
+
+
+ul li:last-child {
+  background-color: yellow;
+}
+
+li:first-of-type {
+  background-color: red;
+}
+
+input:required {
+  background-color: grey;
+}
+
+li:empty  {
+  border-top: 2px dashed red;
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+
+html {
+	background:#666666
+}
+body {
+	margin:50px auto;
+	width:938px;
+	padding:10px 10px 30px;
+	background:#CCCCCC;
+	font: 80%/150% "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border:1px solid #fff;
+	box-shadow:0 0 10px rgba(0,0,0,0.5)
+	
+}

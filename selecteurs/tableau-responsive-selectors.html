@@ -58,7 +58,8 @@
           color:red;
         }
       }
-              table tbody tr td a{
+
+      table tbody tr td a{
                 /* put the elements in one line */
                 white-space: nowrap;
                 display: inline-block;
@@ -68,6 +69,20 @@
                 max-width: 100%;
                 /* put 3 point for hidden txt */
                 text-overflow: ellipsis;
+        }
+        table{
+          width: 100%;
+          margin:5%;
+        }
+        table thead th {
+          background:rgba(0, 0, 0, 0.5);
+          text-align: left;
+          padding: .5rem 1rem;
+          color:#fff;
+
+        }
+        table tbody tr:nth-child(even) {
+          background-color: red;
         }
 
     </style>
@@ -93,14 +108,24 @@
           <td><a href="tel:514 933-9861">514 933-9861</a></td>
         </tr>
         <tr>
-          <td>Alguien</td>
-          <td>Personne</td>
+          <td>Sommeone</td>
+          <td>Nobody</td>
           <td>
-            <a href="mailto:alguien@espacecourbeformation.com">
-            alguien@espacecourbeformation.com
+            <a href="mailto:Someone@espacecourbeformation.com">
+            Someone@espacecourbeformation.com
             </a
           </td>
           <td><a href="tel:514 933-9999">514 933-9999</a></td>
+        </tr>
+        <tr>
+          <td>Camilo</td>
+          <td>Pin</td>
+          <td>
+            <a href="mailto:camilo@espacecourbeformation.com">
+            camilo@espacecourbeformation.com
+            </a
+          </td>
+          <td><a href="tel:514 933-7777">514 933-7777</a></td>
         </tr>
       </tbody>
     </table>

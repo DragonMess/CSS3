@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multicolonnes</title>
+    <style>
+      html {
+        font: normal 100%/1.5 Helvetica, Arial, sans-serif;
+      }
+      body {
+        padding-right: 5%;
+      }
+      p {
+        margin: 0 0 1.5rem;
+      }
+      /* setting to responsive img */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media screen and (min-width: 768px) {
+        #multicolonne {
+          column-count: 2;
+          column-gap: 5rem;
+          column-rule: 1px solid rgba(0, 0, 0, 0.7);
+        }
+        #multicolonne h1,
+        #multicolonne p:last-of-type {
+          column-span: all;
+          /* text-align: center; */
+        }
+        #multicolonne p:last-of-type {
+          margin-top: 1.5rem;
+        }
+        /* selector 4th child p tag */
+        #multicolonne p:nth-child(4) {
+          margin-bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="clearfix">
+    <div id="multicolonne">
+      <h1 class="clearfix">Un événement bien malencontreux</h1>
+      <img src="https://via.placeholder.com/1200x400" alt="" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        sodales elit sed dui dapibus non consectetur ante faucibus. Donec velit
+        justo, bibendum sed placerat ut, laoreet at sem. Duis accumsan varius
+        tristique.
+      </p>
+      <h2>Titre de niveau 2</h2>
+      <p>
+        Vestibulum ullamcorper mattis neque quis sollicitudin. Nunc lorem erat,
+        varius in luctus non, interdum a mauris. Donec mattis pulvinar urna vel
+        dapibus. Nulla facilisi.
+      </p>
+      <p>
+        Quisque posuere tellus eu ante fermentum placerat. Vivamus velit diam,
+        aliquam sit amet aliquet et, placerat in magna. Proin auctor tortor non
+        metus volutpat sed venenatis metus convallis. Nunc at leo vel mi
+        accumsan fermentum in quis lacus. Donec eget lacus arcu. Ut nec iaculis
+        quam. Mauris ultrices nulla ut urna congue at auctor ipsum faucibus.
+        Phasellus turpis ipsum, blandit sit amet pulvinar sit amet, malesuada
+        quis ligula.
+      </p>
+      <p>
+        Vestibulum ullamcorper mattis neque quis sollicitudin. Nunc lorem erat,
+        varius in luctus non, interdum a mauris. Donec mattis pulvinar urna vel
+        dapibus. Nulla facilisi.
+      </p>
+      <p>
+        Quisque posuere tellus eu ante fermentum placerat. Vivamus velit diam,
+        aliquam sit amet aliquet et, placerat in magna. Proin auctor tortor non
+        metus volutpat sed venenatis metus convallis. Nunc at leo vel mi
+        accumsan fermentum in quis lacus. Donec eget lacus arcu. Ut nec iaculis
+        quam. Mauris ultrices nulla ut urna congue at auctor ipsum faucibus.
+        Phasellus turpis ipsum, blandit sit amet pulvinar sit amet, malesuada
+        quis ligula.
+      </p>
+    </div>
+  </body>
+</html>

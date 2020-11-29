@@ -8,6 +8,17 @@
       html {
         font: normal 100%/1.5 Helvetica, Arial, sans-serif;
       }
+      table tbody tr td a {
+        /* put the elements in one line */
+        white-space: nowrap;
+        display: inline-block;
+        /* If txt bigger than space hidden txt overflow */
+        overflow: hidden;
+        /* max if there are space show */
+        max-width: 100%;
+        /* put 3 point for hidden txt */
+        text-overflow: ellipsis;
+      }
       @media screen and (max-width: 700px) {
         table,
         tr,
@@ -32,59 +43,56 @@
           font-weight: bold;
           margin-bottom: 1rem;
         }
-        html[lang="fr"]      table tbody tr td a[href^="mailto"]:before{
-          content:"Courriel:";
+        html[lang="fr"] table tbody tr td a[href^="mailto"]:before {
+          content: "Courriel:";
         }
-        html[lang="en"]      table tbody tr td a[href^="mailto"]:before{
-          content:"Email:";
+        html[lang="en"] table tbody tr td a[href^="mailto"]:before {
+          content: "Email:";
         }
-        table tbody tr td a[href^="mailto"]:before{
+        table tbody tr td a[href^="mailto"]:before {
           font-weight: bold;
-          color:#000;
+          color: #000;
         }
 
-        html[lang="fr"]      table tbody tr td a[href^="tel"]:before{
-          content:"Tel:";
+        html[lang="fr"] table tbody tr td a[href^="tel"]:before {
+          content: "Tel:";
         }
-        html[lang="en"]      table tbody tr td a[href^="tel"]:before{
-          content:"Tel:";
+        html[lang="en"] table tbody tr td a[href^="tel"]:before {
+          content: "Tel:";
         }
-        table tbody tr td a[href^="tel"]:before{
+        table tbody tr td a[href^="tel"]:before {
           font-weight: bold;
-          color:#000;
+          color: #000;
         }
-        table tbody tr td a{
+        table tbody tr td a {
           text-decoration: none;
-          color:red;
+          color: red;
         }
       }
-
-      table tbody tr td a{
-                /* put the elements in one line */
-                white-space: nowrap;
-                display: inline-block;
-                /* If txt bigger than space hidden txt overflow */
-                overflow: hidden;
-                /* max if there are space show */
-                max-width: 100%;
-                /* put 3 point for hidden txt */
-                text-overflow: ellipsis;
+      @media screen and (min-width: 701px) {
+        body {
+          margin: 2rem;
         }
-        table{
+        table {
           width: 100%;
-          margin:5%;
+          /* no space between cells */
+          border-collapse: collapse;
+          margin: 5%;
         }
         table thead th {
-          background:rgba(0, 0, 0, 0.5);
+          background: rgba(0, 0, 0, 0.5);
           text-align: left;
-          padding: .5rem 1rem;
-          color:#fff;
-
+          padding: 0.5rem 1rem;
+          color: #fff;
         }
-        table tbody tr:nth-child(even) {
+        td {
+          padding: 0.5rem 1rem;
+          border: 1px solid rgba(100, 150, 200, 0.8);
+        }
+        table tbody tr:nth-child(odd) td {
           background-color: red;
         }
-
+      }
     </style>
   </head>
   <body>
@@ -103,7 +111,8 @@
           <td>Stephan</td>
           <td>
             <a href="mailto:juanStephan@espacecourbeformation.com">
-            juanStephan@espacecourbeformation.com</a
+              juanStephan@espacecourbeformation.com</a
+            >
           </td>
           <td><a href="tel:514 933-9861">514 933-9861</a></td>
         </tr>
@@ -112,8 +121,8 @@
           <td>Nobody</td>
           <td>
             <a href="mailto:Someone@espacecourbeformation.com">
-            Someone@espacecourbeformation.com
-            </a
+              Someone@espacecourbeformation.com
+            </a>
           </td>
           <td><a href="tel:514 933-9999">514 933-9999</a></td>
         </tr>
@@ -122,8 +131,8 @@
           <td>Pin</td>
           <td>
             <a href="mailto:camilo@espacecourbeformation.com">
-            camilo@espacecourbeformation.com
-            </a
+              camilo@espacecourbeformation.com
+            </a>
           </td>
           <td><a href="tel:514 933-7777">514 933-7777</a></td>
         </tr>

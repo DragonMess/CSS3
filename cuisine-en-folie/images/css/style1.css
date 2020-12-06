@@ -70,7 +70,7 @@ section p {
   background: var(--btn-hover);
 }
 #intro {
-  background: url(../images/accueil/le-chef.png) no-repeat right bottom,
+  background: url("../images/accueil/le-chef.png") no-repeat right bottom,
     linear-gradient(
       to right,
       rgba(255, 255, 255, 0.8) 0%,
@@ -83,7 +83,7 @@ section p {
   padding-right: 33.333333%;
 }
 #experience-culinaire {
-  background: url(../images/accueil/ustensile.jpg) no-repeat center center;
+  background: url("../images/accueil/ustensile.jpg") no-repeat center center;
   background-size: cover;
   text-align: center;
 }
@@ -108,7 +108,7 @@ section p {
   #experience-culinaire {
     text-align: left;
     background: rgba(var(--main-color), var(--main-color-alpha1))
-      url(../images/accueil/ustensile.jpg) no-repeat center center;
+      url("../images/accueil/ustensile.jpg") no-repeat center center;
     background-size: cover;
     background-blend-mode: luminosity;
     display: flex;
@@ -160,5 +160,20 @@ section p {
 @media screen and (min-width: 992px) {
   #contenu #produits ul li {
     width: calc(33.333333% - 2rem);
+  }
+}
+#pied-page {
+  padding: 0 5% 5%;
+  transform: translateY(-3rem);
+}
+#pied-page img {
+  max-width: 150px;
+}
+@media screen and (min-width: 768px) {
+  #pied-page div:first-child {
+    display: flex;
+  }
+  #pied-page p {
+    padding-left: 1rem;
   }
 }

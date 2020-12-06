@@ -34,6 +34,19 @@
       .btn {
         /* pour controller les dimension width and height */
         display: block;
+        /* center text horiz */
+        text-align: center;
+        /* center vert text */
+        line-height: 5rem;
+        /* center  btn hor-vert*/
+        margin: auto;
+        /* reference pour la position:absolute de btn:before */
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease, all 1s ease;
+      }
+      .btn span {
+        display: block;
         background: linear-gradient(
           to top,
           rgba(169, 3, 41, 1) 0%,
@@ -47,24 +60,67 @@
         border-radius: 50%;
         text-decoration: none;
         font-weight: bold;
-        /* center text horiz */
-        text-align: center;
-        /* center vert text */
-        line-height: 5rem;
-        /* center  btn hor-vert*/
-        margin: auto;
-        /* transition: all 0.3s ease; */
-        /* transition: scale 0.3s ease; */
-        transition: all 0.3s ease, all 1s ease;
+      }
+      .btn:before {
+        content: "";
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        z-index: -1;
+        /* margin: -5rem; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse 3s ease infinite;
+      }
+      .btn:after {
+        content: "";
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: rgba(56, 197, 20, 0.5);
+        position: absolute;
+        z-index: -1;
+        /* margin: -5rem; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse 2s ease infinite 1.2s;
       }
       .btn:hover {
-        transform: scale(1.5) rotate(3600deg);
+        transform: scale(1.5) rotate(45deg);
+      }
+      .btn:hover:before,
+      .btn:hover::after {
+        /* pause animation */
+        animation-play-state: paused;
+        /* animation no  visible */
+        display: none;
+      }
+      a span {
+        background: green;
+      }
+      @keyframes pulse {
+        0% {
+          width: 1rem;
+          height: 1rem;
+          opacity: 1;
+        }
+        100% {
+          width: 15rem;
+          height: 15rem;
+          opacity: 0;
+        }
       }
     </style>
   </head>
   <body>
     <div class="btn-wrapper">
-      <a href="#" class="btn">Noel</a>
+      <a href="#" class="btn"> <span>Noel</span></a>
     </div>
   </body>
 </html>

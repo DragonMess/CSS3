@@ -4,6 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      html {
+        font: 400 100%/1.5 Helvetica, Arial, sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .btn-wrapper {
+        /* totu largeur */
+        width: 100vw;
+        /* tout hauter */
+        height: 100vh;
+        background: linear-gradient(
+          to bottom,
+          rgba(169, 3, 41, 1) 0%,
+          rgba(143, 2, 34, 1) 50%,
+          rgba(109, 0, 25, 1) 50%,
+          rgba(109, 0, 25, 1) 100%
+        );
+        display: flex;
+        /* centre horizontale */
+        /* justify-content: center; */
+        /* center verticale */
+        /* align-items: center; */
+      }
+      .btn {
+        /* pour controller les dimension width and height */
+        display: block;
+        background: linear-gradient(
+          to top,
+          rgba(169, 3, 41, 1) 0%,
+          rgba(143, 2, 34, 1) 50%,
+          rgba(109, 0, 25, 1) 50%,
+          rgba(109, 0, 25, 1) 100%
+        );
+        color: #fff;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        text-decoration: none;
+        font-weight: bold;
+        /* center text horiz */
+        text-align: center;
+        /* center vert text */
+        line-height: 5rem;
+        /* center  btn hor-vert*/
+        margin: auto;
+        /* transition: all 0.3s ease; */
+        /* transition: scale 0.3s ease; */
+        transition: all 0.3s ease, all 1s ease;
+      }
+      .btn:hover {
+        transform: scale(1.5) rotate(3600deg);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="btn-wrapper">
+      <a href="#" class="btn">Noel</a>
+    </div>
+  </body>
 </html>

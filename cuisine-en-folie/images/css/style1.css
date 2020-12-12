@@ -36,6 +36,7 @@ section {
   background: #fff;
   padding: 5%;
   border-radius: var(--border-radius);
+  overflow: hidden;
 }
 section h2 {
   text-transform: uppercase;
@@ -180,6 +181,13 @@ section p {
 #pied-page .contact-info ul {
   list-style: none;
   margin-top: 1rem;
+  display: flex;
+}
+#pied-page .contact-info ul li {
+  margin-right: 1rem;
+}
+#pied-page .contact-info ul li:last-of-type {
+  margin-right: 0;
 }
 #pied-page .contact-info ul li a {
   text-decoration: none;

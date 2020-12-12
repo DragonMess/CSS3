@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style1.css" media="screen" />
+    <link rel="stylesheet" href="css/animate.css" media="screen" />
     <link rel="stylesheet" href="css/print.css" media="print" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Cuisine en folie</title>
   </head>
   <body>
@@ -13,8 +22,8 @@
     </header>
     <main id="contenu">
       <section id="intro">
-        <h2>Introduction</h2>
-        <p>
+        <h2 class="wow hinge">Introduction</h2>
+        <p class="wow slideInLeft">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
           vel, placeat? Ea.
         </p>
@@ -178,5 +187,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

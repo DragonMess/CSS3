@@ -177,3 +177,24 @@ section p {
     padding-left: 1rem;
   }
 }
+#pied-page .contact-info ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+#pied-page .contact-info ul li a {
+  text-decoration: none;
+  color: #fff;
+  /* pour prendre la largeur du text  ( le btn ne seront pas de meme grandeur*/
+  /* display: inline-flex; */
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 5rem;
+  width: 200px;
+}
+#pied-page .contact-info svg {
+  width: 1.5rem;
+  height: auto;
+  margin-right: 1rem;
+}

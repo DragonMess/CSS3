@@ -191,10 +191,21 @@ section p {
   border: 1px solid #fff;
   padding: 1rem;
   border-radius: 5rem;
-  width: 200px;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+#pied-page .contact-info span {
+  display: block;
+}
+#pied-page .contact-info span:first-of-type {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 #pied-page .contact-info svg {
   width: 1.5rem;
-  height: auto;
-  margin-right: 1rem;
+  height: 1.5rem;
+}
+#pied-page .contact-info span + span {
+  margin-left: 1rem;
 }

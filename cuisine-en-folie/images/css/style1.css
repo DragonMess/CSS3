@@ -194,6 +194,16 @@ section p {
   width: 55px;
   height: 55px;
   overflow: hidden;
+  /* va rester sur un ligne */
+  white-space: nowrap;
+}
+#pied-page .contact-info ul li a:hover,
+#pied-page .contact-info ul li a:focus {
+  animation: anim-btn 0.5s ease;
+  /* animation one time */
+  animation-iteration-count: 1;
+  /* animation stop in 100% */
+  animation-fill-mode: forwards;
 }
 #pied-page .contact-info span {
   display: block;
@@ -208,4 +218,16 @@ section p {
 }
 #pied-page .contact-info span + span {
   margin-left: 1rem;
+}
+@keyframes anim-btn {
+  0% {
+    width: 55px;
+    background-color: var(--main-color);
+    color: rgba(var(--main-color));
+  }
+  100% {
+    width: 200px;
+    background-color: #fff;
+    color: rgba(var(--main-color));
+  }
 }
